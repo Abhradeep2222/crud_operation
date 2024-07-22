@@ -7,7 +7,7 @@ Tutorial Application in that:
 - We can create, retrieve, update, delete Tutorials.
 - There is a Search bar for finding Tutorials by title.
 
-![angular-15-crud-example](angular-15-crud-example.png)
+![angular-15-crud-example_abhra png](https://github.com/user-attachments/assets/de6615ca-f976-4d47-a12f-0647ba18b25b)
 
 Run `ng serve --port 8081` for a dev server. Navigate to `http://localhost:8081/`. The app will automatically reload if you change any of the source files.
 

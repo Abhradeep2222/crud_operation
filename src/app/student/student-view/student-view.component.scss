@@ -1,0 +1,24 @@
+.container {
+    max-width: 500px;
+    margin: 132px auto;
+    padding: 31px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    box-shadow: -13px 20px 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: flex-start;
+}
+.view-button {
+    background-color: #4CAF50;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.view-button:hover {
+    background-color: #3e8e41;
+}

@@ -1,0 +1,13 @@
+<div class="container">
+<div *ngIf="student">
+  <p>First Name: {{student.firstName}}</p>
+  <p>Last Name: {{student.lastName}}</p>
+  <p>Student Id: {{student.id}}</p>
+  <p>Email: {{student.email}}</p>
+  <p>Address: {{student.address}}</p>
+  <p>Phone: {{student.phone}}</p>
+ 
+  <!-- <a [routerLink]="['/students']">Save</a> -->
+  <button class="view-button" (click)="viewHostname()"  [routerLink]="['students']">Save</button>
+</div>
+</div>

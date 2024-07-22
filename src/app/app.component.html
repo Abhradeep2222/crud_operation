@@ -1,0 +1,8 @@
+<!-- <a [routerLink]="['student-add']">Add</a>
+<a [routerLink]="['students']">View All</a> -->
+<div class="buttons" style="background-color: #e6e6e6;"> 
+      <h1>Students List</h1>
+    <button class="add-button" [routerLink]="['student-add']"> <mat-icon style="font-size: 19px;position: relative;bottom: -9px;">add</mat-icon> Add New Student</button>
+    <button class="statistic-button" [routerLink]="['students']"><mat-icon style="font-size: 19px;position: relative;bottom: -9px;">groups</mat-icon> View All Studerts</button>
+  </div>
+<router-outlet></router-outlet>

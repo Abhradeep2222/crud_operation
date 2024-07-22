@@ -1,0 +1,59 @@
+<!-- <ul *ngIf="studentList.length>0">
+  <li *ngFor="let student of studentList">
+    <a [routerLink]="['/student',student.id]">
+    <p >name: {{student.name}}</p>
+    <p >Id: {{student.id}}</p>
+    <p >Gender: {{student.gender}}</p>
+    <p >Address: {{student.address}}</p>
+    </a>
+  </li>
+</ul> -->
+
+<!-- <ul *ngIf="studentList.length>0">
+  <li *ngFor="let student of studentList">
+    <div class="hostname-row">
+      <div class="hostname-cell"><a [routerLink]="['/student',student.id]"></a></div>
+      <div class="hostname-cell">First Name: {{student.firstName}}</div>
+      <div class="hostname-cell">Last Name: {{student.lastName}}</div>
+      <div class="hostname-cell">student Id: {{student.id}}</div>
+      <div class="hostname-cell">Email: {{student.email}}</div>
+      <div class="hostname-cell">Address: {{student.address}}</div>
+      <div class="hostname-cell">Phone: {{student.phone}}</div>
+
+      <div class="hostname-cell">
+        <button class="view-button" (click)="viewHostname()" [routerLink]="['/student',student.id]">View</button>
+        <button class="edit-button" (click)="editHostname()" [routerLink]="['/student-add', student.id]">Edit</button>
+        <button class="delete-button" (click) = "deleteEmployee(student.id)">Delete</button>
+      </div>
+    </div>
+  </li>
+</ul>
+<h3 *ngIf="studentList.length==0" class="text-center">Students Not Found</h3> -->
+
+
+<!-- ******************* -->
+<div class="container">
+  <table class="table table-bordered table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col">Student ID</th>
+        <th scope="col">First Name</th>
+        <th scope="col">last Name</th>
+        <th scope="col">Action</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let student of studentList">
+        <td scope="row">{{student.id}}</td>
+        <td>{{student.firstName}}</td>
+        <td>{{student.lastName}}</td>
+        <td>
+          <button class="btn btn-primary" (click)="viewHostname()" [routerLink]="['/student',student.id]"><mat-icon style="font-size: 19px;/* padding-top: 8px; *//* height: 28px; */width: 28px;padding: 8px 6px 13px;">visibility</mat-icon> View</button>
+          <button class="btn btn-warning" (click)="editHostname()" [routerLink]="['/student-add', student.id]"> <mat-icon style="font-size: 19px;/* padding-top: 8px; *//* height: 28px; */width: 28px;padding: 8px 6px 13px;">edit</mat-icon> Edit</button>
+          <button class="btn btn-danger" (click)="deleteEmployee(student.id)"><mat-icon style="font-size: 19px;/* padding-top: 8px; *//* height: 28px; */width: 28px;padding: 8px 6px 13px;">delete</mat-icon> Delete</button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+  <h3 *ngIf="studentList.length==0" class="text-center" style="color: red; background-color: antiquewhite;">Student's Details is not Available</h3>
+</div>
